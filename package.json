@@ -1,0 +1,26 @@
+{
+  "name": "abdujabbor-portfolio",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.12",
+    "@types/react": "18.2.66",
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.41",
+    "tailwindcss": "3.4.7",
+    "typescript": "5.4.5"
+  }
+}

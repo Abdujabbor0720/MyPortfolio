@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-feature-settings: "ss01" on, "ss02" on;
+}
+
+.max-w-content {
+    max-width: 72ch;
+}
+
+/* Focus styles */
+.focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2;
+}
+
+/* Skip link */
+.skip-link {
+    @apply absolute -top-10 left-0 bg-white dark:bg-gray-800 text-black dark:text-white px-3 py-2 z-50 border border-gray-300 dark:border-gray-600 rounded;
+}
+
+.skip-link:focus {
+    @apply top-2;
+}
