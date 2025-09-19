@@ -1,5 +1,11 @@
 import Container from "@/components/Container"
-import { SITE } from "@/lib/site"
+
+const SITE_DATA = {
+  email: "abdujabborsharobiddinov5@gmail.com",
+  telegram: "https://t.me/AbdujabborSharobiddinov",
+  linkedIn: "https://www.linkedin.com/in/abdujabbor-sharobiddinov",
+  github: "https://github.com/Abdujabbor0720"
+}
 
 export default function ContactPage() {
   return (
@@ -24,10 +30,10 @@ export default function ContactPage() {
           </form>
           <div className="rounded-lg border border-gray-200 p-4">
             <ul className="space-y-2 text-sm">
-              <li><span className="font-medium">Email:</span> <a className="underline focus-ring" href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-              <li><span className="font-medium">Telegram:</span> <a className="underline focus-ring" href={SITE.telegram} target="_blank" rel="noreferrer">{SITE.telegram}</a></li>
-              <li><span className="font-medium">LinkedIn:</span> <a className="underline focus-ring" href={SITE.linkedIn} target="_blank" rel="noreferrer">{SITE.linkedIn}</a></li>
-              <li><span className="font-medium">GitHub:</span> <a className="underline focus-ring" href={SITE.github} target="_blank" rel="noreferrer">{SITE.github}</a></li>
+              <li><span className="font-medium">Email:</span> <a className="underline focus-ring" href={`mailto:${SITE_DATA.email}`}>{SITE_DATA.email}</a></li>
+              <li><span className="font-medium">Telegram:</span> <a className="underline focus-ring" href={SITE_DATA.telegram} target="_blank" rel="noreferrer">{SITE_DATA.telegram}</a></li>
+              <li><span className="font-medium">LinkedIn:</span> <a className="underline focus-ring" href={SITE_DATA.linkedIn} target="_blank" rel="noreferrer">{SITE_DATA.linkedIn}</a></li>
+              <li><span className="font-medium">GitHub:</span> <a className="underline focus-ring" href={SITE_DATA.github} target="_blank" rel="noreferrer">{SITE_DATA.github}</a></li>
             </ul>
           </div>
         </div>
